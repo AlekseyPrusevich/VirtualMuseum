@@ -1,0 +1,1175 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'Tahoma Regular';
+  src: url('/fonts/Tahoma.eot') format('eot'),
+  url('/fonts/Tahoma.woff') format('woff'),
+  url('/fonts/Tahoma.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Tahoma Regular';
+  src: url('/fonts/Tahoma-Bold.eot') format('eot'),
+  url('/fonts/Tahoma-Bold.woff') format('woff'),
+  url('/fonts/Tahoma-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Tahoma Italic';
+  src: url('/fonts/Tahoma-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  outline: none;
+}
+
+.map_baranovichi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Tahoma Regular', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body {
+  min-width: 300px;
+  color: #242424;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 4em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-indent: 3em;
+  margin-bottom: 0.8em;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(50, 55, 159);
+  z-index: 3;
+}
+
+.header__warp {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6em;
+}
+
+.logo__pic {
+  width: 3em;
+}
+
+.logo__text {
+  margin: -0.9em 0 0 0.9em;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.logo__text_virtual-museum {
+  font-size: 1.4em;
+}
+
+.birger-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+}
+
+.header-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav__item {
+  position: relative;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  margin-right: 1.2em;
+  padding: 0.3em 0em 0.1em 0em; 
+}
+
+.header-nav__item:last-child {
+  margin-right: 0px;
+}
+
+.header-nav__item a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+  padding: 0.3em 0.6em 0.1em 0.6em; 
+}
+
+.virtual-museums__link {
+  position: relative;
+}
+
+.virtual-museums__link > li:hover .virtual-museums__list {
+  display: block;
+}
+
+.virtual-museums__list {
+  display: none;
+  position: absolute;
+  list-style: none;
+  left: 2em;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.virtual-museums__item a {
+  background-color: rgb(50, 55, 159);
+  color: #fff;
+}
+
+.virtual-museums__item a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 0.9em; 
+  padding: 0.08em 0.6em;
+  color: #fff;
+}
+
+.header-nav__item:hover {
+  border-radius: 1em;
+  background-color: white;
+  color: rgb(50, 55, 159);
+}
+
+.header-nav__item:hover > a {
+  color: rgb(50, 55, 159);
+}
+
+.virtual-museums__link:hover .virtual-museums__list li {
+  color: #fff;
+}
+
+.virtual-museums__item a:hover {
+  background-color: #fff;
+  color: rgb(50, 55, 159);
+}
+
+.virtual-museums__link:hover > .virtual-museums__list {
+  display: block;
+}
+
+.mobile-menu__btn {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: .4s;
+}
+  
+.mobile-menu__icon {
+  display: block;
+  position: relative;
+  background: white;
+  width: 90%;
+  height: 4px;
+  transition: .4s;
+}
+
+.mobile-menu__icon::after, 
+.mobile-menu__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background:  white;
+  width: 100%;
+  height: 4px;
+  transition: .4s;
+}
+
+.mobile-menu__icon::after {
+  top: 10px;
+}
+
+.mobile-menu__icon::before {
+  top: -10px;
+}
+  
+.mobile-menu__checkbox {
+  display: none;
+}
+  
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon {
+  background: transparent;
+}
+ 
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, 
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  top: 0;
+}
+
+.mobile-menu__checkbox:checked ~ .header-nav {
+  display: flex;
+}
+  
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* - БЕЛАРУСЬ */
+
+.Belarus {
+  position: relative;
+  padding-top: 4em;
+}
+
+.Belarus_warp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Belarus_warp p {
+  text-indent: 0;
+  margin: 0em;
+}
+
+.Belarus-info {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Belarus-info__panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.Belarus-info__list {
+  margin: 0 0 2em 1.4em;
+  padding: 0;
+}
+
+.Belarus-info__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9em;
+  height: 2.2em;
+  border: 0.07em solid rgb(50, 55, 159);
+  border-radius: 1.1em;
+  color: rgb(50, 55, 159);
+  font-size: 1.6em;
+  margin-bottom: 2em;
+}
+
+.Belarus-info__button span{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.2em;
+}
+
+.Belarus-info__button:hover {
+  transition: .4s;
+  background-color: rgb(50, 55, 159);
+  color: white;
+  text-decoration: none;
+}
+
+/* СЛАЙДЕР*/
+
+.Belarus-info__slider {
+  max-width: 40em;
+  margin-left: 2em;
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* Карта */
+
+.belarus__map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4em; 
+  margin-bottom: 8em; 
+}
+
+.main-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.map__warp {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.main-map__region {
+  stroke: #ffffff;
+}
+
+.main-map__region:hover {
+  transition: .5s;
+}
+
+.main-map__Brest {
+  fill: rgb(219, 226, 131);
+}
+
+.main-map__Gomel {
+  fill: rgb(255, 247, 177);
+}
+
+.main-map__Mogilev {
+  fill: rgb(251, 217, 202);
+}
+
+.main-map__Vitebsk {
+  fill: rgb(210, 205, 231); 
+}
+
+.main-map__Grodno {
+  fill: rgb(253, 213, 165);
+}
+
+.main-map__Minsk {
+  fill: rgb(245, 180, 210);
+}
+
+.main-map__Brest:hover {
+  fill: rgb(213, 223, 82);
+}
+
+.main-map__Gomel:hover {
+  fill: rgb(245, 231, 108);
+}
+
+.main-map__Mogilev:hover {
+  fill: rgb(241, 181, 155);
+}
+
+.main-map__Vitebsk:hover {
+  fill: rgb(170, 161, 211); 
+}
+
+.main-map__Grodno:hover {
+  fill: rgb(231, 176, 108);
+}
+
+.main-map__Minsk:hover {
+  fill: rgb(233, 147, 187);
+}
+
+.main-map__city:hover {
+  transition: .5s;
+  r: 1.2em;
+}
+
+.main-map__City-of-Minsk:hover {
+  transition: .5s;
+  r: 1.5em;
+}
+
+.main-map__city_Baranovichi:hover {
+  r: 1em;
+}
+
+.main-map__city {
+  fill: red;
+}
+
+.main-map__city-name {
+  font-weight: bold;
+  stroke: none;
+  color: #181818;
+  font-size: 1,2em;
+}
+
+.main-map__tooltip {
+  display: none;
+  padding: 0.8em; 
+  width: 22em;
+  min-height: 10em;
+  position: absolute;
+  background-color: rgba(230, 230, 230, 0.7);
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.main-map__tooltip img {
+  display: block;
+  margin: 0 auto;
+  height: 9em;
+}
+
+.main-map__tooltip ul {
+  padding: 0;
+  padding-left: 1.4em;
+  margin-bottom: 0;
+}
+
+.main-map__tooltip p, 
+.main-map__tooltip li {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
+
+.baranovichi-circle circle {
+  stroke: #ffffff;
+}
+
+/* ОБЛАСТИ */
+
+.region-of-Belarus {
+  display: none;
+  transition: 1s;
+  width: 100%;
+  min-height: 1080px;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size: cover;
+  color: white;
+  z-index: 0;
+}
+
+.region-of-Belarus_warp {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-bottom: 4em;
+}  
+
+.region__img {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.region-of-Belarus ul {
+  padding: 0;
+  margin-left: 3em;
+}
+
+.close-region {
+  margin: 1em 0 0 auto;
+}
+
+.close-region_svg {
+  width: 4em;
+  height: 4em;
+  fill: rgba(50, 55, 159, 0.9);
+  border: 0.2em solid rgba(50, 55, 159, 0.9);
+  border-radius: 50%;
+}
+
+.close-region_svg polyline {
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 0.2em;
+}
+
+.close-region_svg:hover {
+  transition: 0.3s;
+  stroke-width: 0.2em;
+  fill: rgba(255, 255, 255, 0.9);
+  stroke:rgba(50, 55, 159, 0.8); 
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+}
+
+.close-region_svg:hover > polyline {
+  stroke:rgba(50, 55, 159, 0.8); 
+}
+
+/* БРЕСТСКАЯ ОБЛАСТЬ */
+
+.Brest-region {
+  background-image:url(../img/region/background/brest-background.png);
+}
+
+.region__map__city_Brest:hover {
+  r: 1.8em;
+}
+
+.region__map_city-name {
+  font-size: 1.7em;
+}
+
+.region__map__city-name_Baranivi {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.brest-region__map_region {
+  stroke:white;
+  stroke-width: 3px;
+  fill: rgb(252, 225, 135);
+  stroke-miterlimit: 10;
+}
+
+.brest-region__map_region:hover {
+  transition: .3s;
+  fill: rgb(255, 220, 105);
+}
+
+.region-map__tooltip {
+  display: none;
+  position: absolute;
+  padding: 0.6em; 
+  width: 18em;
+  min-height: 10em;
+  background-color: rgba(230, 230, 230, 0.7);
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.region-map__tooltip img {
+  display: block;
+  margin: 0 auto;
+  height: 7em;
+}
+
+.region-map__tooltip ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+}
+
+.region-map__tooltip p, 
+.region-map__tooltip li {
+  text-indent: 1.5em;
+  font-size: 0.7em;
+  padding: 0;
+  margin: 0;
+}
+
+.Gomel-region {
+  background-image: url(../img/region/background/gomel-background.png);
+}
+
+.Mogilev-region {
+  background-image: url(../img/region/background/mogilev-background.png);
+}
+
+.Vitebsk-region {
+  background-image: url(../img/region/background/vitebsk-background.png);
+}
+
+.Grodno-region {
+  background-image: url(../img/region/background/grodno-background.png);
+}
+
+.Minsk-region {
+  background-image: url(../img/region/background/minsk-background.png);
+}
+
+/* - БАРАНОВИЧИ */
+
+.Baranovichi {
+  background-image:url(../img/Baranovichi.png);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:50% 50%;
+  background-size: cover;
+  color: white;
+  transition: 1.8s;
+}
+
+.Baranovichi_warp {
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  text-align: justify;
+  padding-bottom: 8em;
+}  
+
+.Baranovichi__history {
+  margin-bottom: 2em;
+}
+
+.Baranovichi__history_main-info {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 4em;
+}
+
+.Baranovichi__main-info_logo img {
+  width: 26em;
+}
+
+.Baranovichi__main-info {
+  margin-left: 1em;
+}
+
+.Baranovichi__history_fragment {
+  margin-bottom: 1.6em;
+}
+
+.Baranovichi__history_slider {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.fotorama__wrap {
+  margin: 0 auto;
+}
+
+.Baranovichi__history_fragment a {
+  color: rgb(0, 128, 255)
+}
+
+.Baranovichi__history_fragment a:hover {
+  text-decoration: none;
+  color: rgb(0, 128, 255)
+}
+
+.Baranovichi__video {
+  margin: 0 auto;
+  width: 90%;
+  height: 33.75em;
+}
+
+/* - БЭЮК */
+
+.BEaLC {
+  background-image:url(../img/belc.png);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position:50% 50%;
+  color: white;
+}
+
+.BEaLC_warp {
+  min-height: 1080px;
+  padding-bottom: 8em;
+} 
+
+.BEaLC__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.BEaLC__epigraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 4em;
+}
+
+.BEaLC__epigraph_text {
+  width: 60%;
+  margin: auto 0;
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.4;
+  text-indent: 0;
+}
+
+.BEaLC__epigraph_image {
+  width: 26%;
+}
+
+.BEaLC__history {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.BEaLC__history_text {
+  margin-left: 1.4em;
+}
+
+.BEaLC__history_list {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+.BEaLC__history_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 70em;
+}
+
+.BEaLC__history_img {
+  height: 10.26em;
+  width: 7.33em;
+  margin: 0.2em 0 0.2em 0.4em;
+}
+
+.BEaLC__history_big-image {
+  display: none;
+  position: absolute;
+  min-height: 50em;
+  width: 35.4em;
+  padding: 0.7em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.BEaLC__history_big-image p{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.BEaLC__history_big-img {
+  margin: 0 auto;
+}
+
+.BEaLC__map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20em;
+}
+
+/* ФУТЕР */
+
+.footer {
+  width: 100%;
+  height: 4em;
+  background-color: rgb(50, 55, 159);
+}
+
+.footer__warp {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.7em;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.social-list {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 0.2em 0 0.2em;
+}
+
+.social-list__item_telegram {
+  margin: 0 0.15em 0 0.15em;
+}
+
+
+
+.social-vk {
+  background: url("../img/ico/social-vk.png") no-repeat;
+
+}
+
+.social-ins {
+  background: url("../img/ico/social-is.png") no-repeat;
+}
+
+.social-tw {
+  background: url("../img/ico/social-tw.png") no-repeat;
+}
+
+.social-tg {
+  background: url("../img/ico/social-tl.png") no-repeat;
+}
+
+.social-vb {
+  background: url("../img/ico/social-vb.png") no-repeat;
+}
+
+.social {
+  display: block;
+  width: 2.6em;
+  height: 2.6em;
+  background-size: contain;
+  transition: all 0.15s ease;
+}
+
+.social-yt {
+  width: 3.6em;
+  background: url("../img/ico/social-yt.png") no-repeat;
+  background-size: contain;
+}
+
+.social:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+
+  html {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+
+  .birger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-map__tooltip {
+    width: 20.5em;
+  }
+
+  .BEaLC__history_img {
+    height: 8.4em;
+    width: 6em;
+  }
+}
+
+@media (max-width: 992px) {
+
+  html {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .header__warp {
+    position: relative;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .virtual-museums__list {
+    left: -4em;
+  }
+
+  .mobile-menu__btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav__item {
+    display: block;
+    width: 100%;
+    background-color: rgb(50, 55, 159);
+  }
+
+  .header-nav__list li:hover {
+    border-radius: 0px;
+  }
+
+  .Belarus-info {
+    flex-direction: column;
+  }
+
+  .main-map__tooltip {
+    width: 19em;
+    min-height: 8em;
+  }
+
+  .Baranovichi__main-info_list {
+    padding-left: 1.4em;
+  }
+
+  .Belarus-info__slider {
+    max-width: 60em;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .BEaLC__history_big-image {
+    min-height: 40em;
+    width: 28.32em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 10px;
+    line-height: 1.05;
+  }
+
+  .dropdown-menu {
+    top: 12px;
+    left: -120px;
+  }
+
+  .main-map__tooltip {
+    width: 16em;
+    min-height: 8em;
+  }
+
+  .Baranovichi__main-info {
+    margin-left: 0em;
+    width: 100%;
+  }
+
+  .Baranovichi__main-info_logo {
+    display: none;
+  }
+
+  .BEaLC__epigraph_text {
+    width: 100%;
+  }
+
+  .BEaLC__epigraph_image {
+    display: none;
+  }
+
+  .BEaLC__history_img {
+    height: 7.47em;
+    width: 5.35em;
+  }
+}
+
+@media (max-width: 540px) {
+
+  html {
+    font-size: 9px;
+  }
+
+  .dropdown-menu {
+    top: 10px;
+    left: -100px;
+  }
+
+  .BEaLC__history_big-image {
+    min-height: 30em;
+    width: 21.24em;
+  }
+
+  .footer__copyright {
+    font-size: 0.8em;
+    padding-top: 0;
+    max-width: 20em;
+  }
+
+  .social {
+    width: 2.1em;
+    height: 2.1em;
+  }
+
+  .social-yt {
+    width: 3em;
+  }
+}
