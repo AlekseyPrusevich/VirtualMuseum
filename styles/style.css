@@ -148,6 +148,13 @@ p {
   width: 100%;
   background-color: rgb(50, 55, 159);
   z-index: 3;
+	top: 0; 
+  left: 0;
+	transition: all .3s ease;
+}
+
+.header.out {
+	transform: translateY(-100%);
 }
 
 .header__warp {
