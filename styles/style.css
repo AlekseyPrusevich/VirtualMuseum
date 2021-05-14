@@ -350,14 +350,29 @@ p {
 /* - БЕЛАРУСЬ */
 
 .Belarus {
-  position: relative;
-  padding-top: 4em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .Belarus_warp {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 8em;
+  padding-bottom: 16em;
+}
+
+.Belarus__backgroind-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  z-index: -1;
 }
 
 .Belarus_warp p {
@@ -372,6 +387,7 @@ p {
 }
 
 .Belarus-info__panel {
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
 }
@@ -422,7 +438,6 @@ p {
   position: relative;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
 
 .slider__wrapper {
@@ -496,12 +511,12 @@ p {
 /* Карта */
 
 .belarus__map {
+  position: static;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 4em; 
-  margin-bottom: 8em; 
+  margin-top: 6em; 
 }
 
 .main-map {
@@ -792,7 +807,8 @@ p {
   flex-direction: column;
   min-height: 1080px;
   text-align: justify;
-  padding-bottom: 8em;
+  padding-top: 8em;
+  padding-bottom: 16em;
 }  
 
 .Baranovichi__history {
@@ -845,6 +861,7 @@ p {
 /* - БЭЮК */
 
 .BEaLC {
+
   background-image:url(../img/belc.png);
   background-repeat:no-repeat;
   background-attachment: fixed;
@@ -855,7 +872,8 @@ p {
 
 .BEaLC_warp {
   min-height: 1080px;
-  padding-bottom: 8em;
+  padding-top: 8em;
+  padding-bottom: 16em;
 } 
 
 .BEaLC__info {

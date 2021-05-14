@@ -17,11 +17,8 @@ $(function(){
             let target = $(this).attr('href');
             let font_size = $('#text-size').css('font-size').substring(0, $('#text-size').css('font-size').length - 2);
             let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+            let scroll_lenthe = $(target).offset().top - (+font_size / 1.5) * 4 + 58;
 
-                let scroll_lenthe = $(target).offset().top - (+font_size / 1.5) * 4 + 58;
-
-            
-            
             console.log(posTop);
             console.log(scroll_lenthe);
             console.log(Math.abs(posTop - scroll_lenthe) / 3);
