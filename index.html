@@ -37,7 +37,6 @@
             <li class="header-nav__item">
               <a class="bealc-link" href="#bealc-link"><span>Колледж</span></a>
             </li>
-
             <li class="header-nav__item">
               <a class="baranovichi-link" href="#baranovichi-link"><span>Барановичи</span></a>
             </li>
@@ -49,9 +48,11 @@
                 <ul class="virtual-museums__list">
                   <li class="virtual-museums__item"><a target="_blank" href="https://my.matterport.com/show/?m=jK6tX26JL4t">Музей истории Великой Отчественной Войны</a></li>
                   <li class="virtual-museums__item"><a target="_blank" href="http://www.brest-fortress.by/virtualnye-tury/296-oborona">Музей обороны Брестской крепости</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://khatyn.by/ru/about/excursion/">Мемориальный комплекс «Хатынь»</a></li>
+                  <!--<li class="virtual-museums__item"><a target="_blank" href="http://khatyn.by/ru/about/excursion/">Мемориальный комплекс «Хатынь»</a></li>-->
                   <li class="virtual-museums__item"><a target="_blank" href="https://niasvizh.by/posetitelyam/mediagelereya/">Несвижский замок</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://old.nlb.by/navigator/Biblio_pres_03.html">Национальная библиотека Беларуси</a></li>
+                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/museum-rujanski-dvorcovi-kompleks-sapegov-rujani/">Ружанский дворцовый комплекс Сапегов</a></li>
+                  <li class="virtual-museums__item"><a target="_blank" href="http://palace.by/virtual_tour/">Дворец Республики</a></li>
+                  <li class="virtual-museums__item"><a target="_blank" href="https://nlb.by/content/chitatelyu/znakomstvo-s-bibliotekoy/virtualnaya-ekskursiya-po-biblioteke/">Национальная библиотека Беларуси</a></li>
                 </ul>
             </li>
             <li class="header-nav__item">
@@ -204,9 +205,52 @@
               <img class="BEaLC__history_big-img" src="img/document/middle/2019-Акредетация-0001.jpg" alt="">
               <p>Сертификаты №0000920 государственной аккредитации учреждения образования по специальности «Операционная деятельность в логистике»</p>
             </div>
-
           </div>
         </div>
+
+        <h3 class="BEaLC__history_title">Виртуальная экскурсия по колледжу</h3>
+        <div class="panaram__container">
+          <div class="panaram__wrap">
+            <div class="panaram__buttons">
+<!--
+              <a href="#" class="panaram__bnt panaram-back_bnt">Назад</a>
+              <a href="#" class="panaram__bnt panaram-next_bnt">Вперед</a>
+-->
+              <ul class="panaram__nav">
+                <li class="panaram__nav_item panaram__nav_item-1">Первый этаж
+                  <ul class="panaram__item_nav panaram__item_nav-1">
+                    <li class="item__nav_item"><a class="panarama__link panarama__link-entrance" href="javascript:l_image('img/panaram/105.jpg')">Главный вход</a></li>
+                    <li class="item__nav_item"><a href="#">Фойе колледжа</a></li>
+                    <li class="item__nav_item"><a href="#">Заоченное отделение</a></li>
+                    <li class="item__nav_item"><a href="#">Дневное отделение</a></li>
+                    <li class="item__nav_item"><a href="#">Кабинет 101</a></li>
+                    <li class="item__nav_item"><a href="#">Кабинет 113</a></li>
+                    <li class="item__nav_item"><a href="#">Кабинет 114</a></li>
+                    <li class="item__nav_item"><a href="#">Лестница</a></li>
+                  </ul>
+                </li>
+                <li class="panaram__nav_item panaram__nav_item-2">Второй этаж
+                  <ul class="panaram__item_nav panaram__item_nav-2">
+                    <li class="item__nav_item"><a href="#">Лестница</a></li>
+                    <li class="item__nav_item"><a href="#">Методический кабинет</a></li>
+                    <li class="item__nav_item"><a href="#">Библиотека</a></li>
+                    <li class="item__nav_item"><a href="#">Кабинет 202</a></li>
+                    <li class="item__nav_item"><a class="panarama__link panarama__link-auditorium212" href="javascript:l_image('img/panaram/212.jpg')">Кабинет 212</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="panaram">
+              <div class="labels__container">
+                <a href="javascript:l_image('img/panaram/212.jpg')" class="panaram__label" id="panaram__label-1">
+                  <img src="ico/transition.png" alt="">
+                </a>
+              </div>
+              <img class="panaram_image" src="img/panaram/105.jpg" alt="Панарама колледжа" name="panarama_img">
+            </div>
+          </div>
+        </div>
+
         <div class="BEaLC__map fadeInUp wow">
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac41c4f8a8d41c36de839bab6e023819ea7da8a4333592f1178c8cb5782572c5c&amp;width=1100&amp;height=520&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
@@ -438,9 +482,9 @@
     </section>
 
     <section class="Belarus" id="belarus_link">
-      <video class="Belarus__backgroind-video"  autoplay loop>
-        <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+      <video class="Belarus__backgroind-video" autoplay loop>
+        <source src="video/Belarus.mp4" type="video/mp4">
+        <source src="video/Belarus.webm" type="video/webm">
       </video>
       <div class="Belarus_warp container">
         <h2>Республика Беларусь</h2>  
@@ -1597,6 +1641,7 @@
   <script type="text/javascript" src="script/script.js"></script>
   <script type="text/javascript" src="script/slider.js"></script>
   <script type="text/javascript" src="script/tooltop.js"></script>
+  <script type="text/javascript" src="script/panarama.js"></script>
   <script src="script/wow.min.js"></script>
   <script>new WOW().init();</script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
