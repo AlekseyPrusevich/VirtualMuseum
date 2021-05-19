@@ -265,7 +265,7 @@ p {
   white-space: nowrap;
   text-decoration: none;
   font-size: 1em; 
-  padding: 0.8em 1em;;
+  padding: 0.6em 1em;;
   color: #fff;
 }
 
@@ -912,6 +912,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 8em;
 }
 
 .BEaLC__history_text {
@@ -958,6 +959,10 @@ p {
 
 /* Панорама */
 
+.college__tour {
+  margin-bottom: 60em;
+}
+
 .panaram__container {
   position: absolute;
   left: 0;
@@ -967,7 +972,6 @@ p {
 .panaram__wrap {
   position: relative;
 }
-
 /*
 .panaram__bnt {
   display: inline-block;
@@ -996,6 +1000,7 @@ p {
   right: 0;
 }
 */
+
 .panaram__nav {
   display: flex;
   margin: 0;
@@ -1070,8 +1075,8 @@ p {
   position: relative;
   left: 0;
   width: 100%;
-  height: 800px;
-  min-width: 400px;
+  height: 52em;
+  min-width: 40em;
   overflow: auto;
 }
 
@@ -1101,7 +1106,6 @@ p {
   justify-content: center;
   max-width: 90%;
   margin: 0 auto;
-  margin-top: 100em;
 }
 
 /* ФУТЕР */
@@ -1142,8 +1146,6 @@ p {
 .social-list__item_telegram {
   margin: 0 0.15em 0 0.15em;
 }
-
-
 
 .social-vk {
   background: url("../img/ico/social-vk.png") no-repeat;
