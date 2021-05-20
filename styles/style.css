@@ -232,7 +232,7 @@ p {
   text-decoration: none;
   font-size: 1.3em;
   color: white;
-  padding: 0.9em 1em 0.9em 1em; 
+  padding: 0.88em 1em 0.88em 1em; 
 }
 
 .virtual-museums__link {
@@ -677,7 +677,12 @@ p {
 
 .region__img {
   width: 90%;
-  margin: 1em auto;
+  margin: 0 auto;
+}
+
+.region__map_img {
+  display: block;
+  margin: 0 auto;
 }
 
 .region-of-Belarus ul {
