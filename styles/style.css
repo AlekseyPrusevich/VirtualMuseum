@@ -1086,13 +1086,17 @@ p {
 }
 
 .panaram__label {
-  display: block;
+  display: none;
   position: absolute;
-  left: 200px;
-  top: 50px;
+  left: 2595px;
+  top: 260px;
   width: 120px;
   border-radius: 50%;
   z-index: 1;
+}
+
+.panaram__label-1 {
+  display: block;
 }
 
 .panaram__label:hover {
