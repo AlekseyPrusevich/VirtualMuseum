@@ -68,7 +68,7 @@ function l_image (a) {
         label1.style.top = new_panaram_img_Height / 1.8 + "px";
         label1.style.left = new_panaram_img_Width * 0.44 + "px";
         label1.href = "javascript:l_image('img/panaram/library_2.jpg')"
-        label1.title = "Лестница";
+        label1.title = "Коридор первого этажа";
         label1.style.display = "block";
 
         label2.style.top = new_panaram_img_Height / 2.2 + "px";
