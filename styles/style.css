@@ -1088,15 +1088,16 @@ p {
 .panaram__label {
   display: none;
   position: absolute;
-  left: 2595px;
-  top: 260px;
-  width: 120px;
+  width: 90px;
+  margin: 15px;
   border-radius: 50%;
   z-index: 1;
 }
 
 .panaram__label-1 {
   display: block;
+  left: 2595px;
+  top: 260px;
 }
 
 .panaram__label:hover {

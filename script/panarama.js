@@ -87,22 +87,46 @@ function l_image (a) {
       case "img/panaram/firstСorridor.jpg": 
       {
         label1.style.top = new_panaram_img_Height / 2.8 + "px";
-        label1.style.left = new_panaram_img_Width * 0.19 + "px";
+        label1.style.left = new_panaram_img_Width * 0.195 + "px";
         label1.href = "javascript:l_image('img/panaram/101.jpg')"
         label1.title = "Кабинет 101";
         label1.style.display = "block";
 
         label2.style.top = new_panaram_img_Height / 3 + "px";
-        label2.style.left = new_panaram_img_Width * 0.219 + "px";
+        label2.style.left = new_panaram_img_Width * 0.22 + "px";
         label2.href = "javascript:l_image('img/panaram/dayDep.jpg')"
         label2.title = "Дневное отделение";
         label2.style.display = "block";
 
-        label3.style.top = new_panaram_img_Height / 2.3 + "px";
+        label3.style.top = new_panaram_img_Height / 2.4 + "px";
         label3.style.left = new_panaram_img_Width * 0.24 + "px";
         label3.href = "javascript:l_image('img/panaram/zaoDep.jpg')"
         label3.title = "Заочное отделение";
         label3.style.display = "block";
+
+        label4.style.top = new_panaram_img_Height / 3.6 + "px";
+        label4.style.left = new_panaram_img_Width * 0.5 + "px";
+        label4.href = "javascript:l_image('img/panaram/secondСorridor.jpg')"
+        label4.title = "Второй этаж";
+        label4.style.display = "block";
+
+        label5.style.top = new_panaram_img_Height / 2.3 + "px";
+        label5.style.left = new_panaram_img_Width * 0.728 + "px";
+        label5.href = "javascript:l_image('img/panaram/114.jpg')"
+        label5.title = "Кабинет 114";
+        label5.style.display = "block";
+        
+        label6.style.top = new_panaram_img_Height / 2 + "px";
+        label6.style.left = new_panaram_img_Width * 0.74 + "px";
+        label6.href = "javascript:l_image('img/panaram/113.jpg')"
+        label6.title = "Кабинет 113";
+        label6.style.display = "block";
+
+        label7.style.top = new_panaram_img_Height / 1.4 + "px";
+        label7.style.left = new_panaram_img_Width * 0.96 + "px";
+        label7.href = "javascript:l_image('img/panaram/foyer.jpg')"
+        label7.title = "Фойе колледжа";
+        label7.style.display = "block";
         break;
       }
       case "img/panaram/101.jpg": 
@@ -132,11 +156,62 @@ function l_image (a) {
         label1.style.display = "block";
         break;
       }
+      case "img/panaram/113.jpg": 
+      {
+        label1.style.top = new_panaram_img_Height / 2.4 + "px";
+        label1.style.left = new_panaram_img_Width * 0.106 + "px";
+        label1.href = "javascript:l_image('img/panaram/firstСorridor.jpg')"
+        label1.title = "Коридор первого этажа";
+        label1.style.display = "block";
+        break;
+      }
+      case "img/panaram/114.jpg": 
+      {
+        label1.style.top = new_panaram_img_Height / 2.4 + "px";
+        label1.style.left = new_panaram_img_Width * 0.084 + "px";
+        label1.href = "javascript:l_image('img/panaram/firstСorridor.jpg')"
+        label1.title = "Коридор первого этажа";
+        label1.style.display = "block";
+        break;
+      }
+      case "img/panaram/secondСorridor.jpg": 
+      {
+        label1.style.top = new_panaram_img_Height / 2.2 + "px";
+        label1.style.left = new_panaram_img_Width * 0.342 + "px";
+        label1.href = "javascript:l_image('img/panaram/methodical.jpg')"
+        label1.title = "Методический кабинет";
+        label1.style.display = "block";
+
+        label2.style.top = new_panaram_img_Height / 2.2 + "px";
+        label2.style.left = new_panaram_img_Width * 0.546 + "px";
+        label2.href = "javascript:l_image('img/panaram/202.jpg')"
+        label2.title = "Кабинет 202";
+        label2.style.display = "block";
+
+        label3.style.top = new_panaram_img_Height / 1.3 + "px";
+        label3.style.left = new_panaram_img_Width * 0.83 + "px";
+        label3.href = "javascript:l_image('img/panaram/firstСorridor.jpg')"
+        label3.title = "Первый этаж";
+        label3.style.display = "block";
+
+        label4.style.top = new_panaram_img_Height / 2.6 + "px";
+        label4.style.left = new_panaram_img_Width * 0.026 + "px";
+        label4.href = "javascript:l_image('img/panaram/library.jpg')"
+        label4.title = "Библиотека";
+        label4.style.display = "block";
+
+        label5.style.top = new_panaram_img_Height / 2.8 + "px";
+        label5.style.left = new_panaram_img_Width * 0.068 + "px";
+        label5.href = "javascript:l_image('img/panaram/212.jpg')"
+        label5.title = "Кабинет 212";
+        label5.style.display = "block";
+        break;
+      }
       case "img/panaram/methodical.jpg": 
       {
         label1.style.top = new_panaram_img_Height / 2 + "px";
         label1.style.left = new_panaram_img_Width * 0.464 + "px";
-        label1.href = "javascript:l_image('img/panaram/library_2.jpg')"
+        label1.href = "javascript:l_image('img/panaram/secondСorridor.jpg')"
         label1.title = "Коридор второго этажа";
         label1.style.display = "block";
         break;
@@ -151,7 +226,7 @@ function l_image (a) {
   
         label2.style.top = new_panaram_img_Height / 2.5 + "px";
         label2.style.left = new_panaram_img_Width * 0.94 + "px";
-        label2.href = "javascript:l_image('img/panaram/library_2.jpg')"
+        label2.href = "javascript:l_image('img/panaram/secondСorridor.jpg')"
         label2.title = "Коридор второго этажа";
         label2.style.display = "block";
         break;
@@ -167,7 +242,11 @@ function l_image (a) {
       }
       case "img/panaram/212.jpg": 
       {
-        label1.style.left = "500px";
+        label1.style.top = new_panaram_img_Height / 2.4 + "px";
+        label1.style.left = new_panaram_img_Width * 0.506 + "px";
+        label1.href = "javascript:l_image('img/panaram/secondСorridor.jpg')"
+        label2.title = "Коридор второго этажа";
+        label1.style.display = "block";
         break;
       }
     }
