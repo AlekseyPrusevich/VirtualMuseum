@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/style.min.css">
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
@@ -21,8 +20,8 @@
           <img class="logo__pic" src="img/logo.png" alt="логотип">
         </a>
         <div class="logo__text">
-          <span class="logo__text_virtual-museum">Виртуальный музей</span>
-          <span class="logo__text_belc">Барановичский экономико-</br>юридический колледж</span>
+          <span class="logo__text-title">Виртуальный музей</span>
+          <span class="logo__text-desc">Барановичский экономико-</br>юридический колледж</span>
         </div>
       </div>
 
@@ -35,34 +34,70 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="bealc-link" href="#bealc-link"><span>Колледж</span></a>
+              <a class="bealc-link" href="#bealc-link">
+                <span>Колледж</span>
+              </a>
             </li>
             <li class="header-nav__item">
-              <a class="baranovichi-link" href="#baranovichi-link"><span>Барановичи</span></a>
+              <a class="baranovichi-link" href="#baranovichi-link">
+                <span>Барановичи</span>
+              </a>
             </li>
             <li class="header-nav__item">
-              <a href="#belarus_link" id="text-size">Беларусь</a>
-            </li>
-            <li class="header-nav__item virtual-museums__link">
-                <a href=""><span>Виртуальные туры</span></a>
-                <ul class="virtual-museums__list">
-                  <li class="virtual-museums__item"><a target="_blank" href="https://my.matterport.com/show/?m=jK6tX26JL4t">Музей истории Великой Отчественной Войны</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://www.brest-fortress.by/virtualnye-tury/296-oborona">Музей обороны Брестской крепости</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="https://3dmap.by/panorams/khatyn/hight/?code=khatyn&quality=hight">Мемориальный комплекс «Хатынь»</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="https://niasvizh.by/posetitelyam/mediagelereya/">Несвижский замок</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/bashnya-donzhon-kamenec/">Башня-донжон. Каменец</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/zamok-v-lyubche/">Любчанский замок. Любча</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/museum-rujanski-dvorcovi-kompleks-sapegov-rujani/">Ружанский дворцовый комплекс Сапегов</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/dvorec-iz-masakry-zheludok/">Дворец из «Масакры». Желудок</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/usadba-lyubanskikh-v-loshickom-parke-minsk/">Усадьба Любанских в Лошицком парке</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/usadba-chapskikh-priluki/">Усадьба Чапских. Прилуки</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://belarus360.by/usadba-nemcevichey-skoki/">Усадьба Немцевичей. Скоки</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="http://palace.by/virtual_tour/">Дворец Республики</a></li>
-                  <li class="virtual-museums__item"><a target="_blank" href="https://nlb.by/content/chitatelyu/znakomstvo-s-bibliotekoy/virtualnaya-ekskursiya-po-biblioteke/">Национальная библиотека Беларуси</a></li>
-                </ul>
+              <a href="#belarus_link" id="text-size">
+                <span>Беларусь</span>
+              </a>
             </li>
             <li class="header-nav__item">
-              <a href="http://www.eurocollege.by/index.php?option=com_content&view=article&id=9&Itemid=115" target="_blank"><span>Контакты</span></a>
+              <a href="">
+                <span>Виртуальные туры</span>
+              </a>
+              <ul class="header-subnav__list">
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="https://my.matterport.com/show/?m=jK6tX26JL4t"><span>Музей истории Великой Отечественной Войны</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://www.brest-fortress.by/virtualnye-tury/296-oborona"><span>Музей обороны Брестской крепости</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="https://3dmap.by/panorams/khatyn/hight/?code=khatyn&quality=hight"><span>Мемориальный комплекс «Хатынь»</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="https://niasvizh.by/posetitelyam/mediagelereya/"><span>Несвижский замок</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/bashnya-donzhon-kamenec/"><span>Башня-донжон. Каменец</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/zamok-v-lyubche/"><span>Любчанский замок. Любча</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/museum-rujanski-dvorcovi-kompleks-sapegov-rujani/"><span>Ружанский дворцовый комплекс Сапегов</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/dvorec-iz-masakry-zheludok/"><span>Дворец из «Масакры». Желудок</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/usadba-lyubanskikh-v-loshickom-parke-minsk/"><span>Усадьба Любанских в Лошицком парке</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/usadba-chapskikh-priluki/"><span>Усадьба Чапских. Прилуки</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://belarus360.by/usadba-nemcevichey-skoki/"><span>Усадьба Немцевичей. Скоки</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="http://palace.by/virtual_tour/"><span>Дворец Республики</span></a>
+                </li>
+                <li class="header-subnav__item">
+                  <a class="header-subnav__link" target="_blank" href="https://nlb.by/content/chitatelyu/znakomstvo-s-bibliotekoy/virtualnaya-ekskursiya-po-biblioteke/"><span>Национальная библиотека Беларуси</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-nav__item">
+              <a href="http://www.eurocollege.by/index.php?option=com_content&view=article&id=9&Itemid=115" target="_blank">
+                <span>Контакты</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -71,7 +106,6 @@
   </header>
 
   <main class="main">
-           
     <section class="BEaLC" id="bealc-link">
       <div class="BEaLC_warp container">
         <H2>Барановичский экономико-юридический колледж</H2>
