@@ -1,0 +1,21 @@
+{
+  "name": "virtualmuseum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "VirtualMuseum"
+  },
+  "author": "Aleksey Prusevich",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
