@@ -1,0 +1,131 @@
+.regions {
+    display: none;
+    transition: 1s;
+    width: 100%;
+    min-height: 1080px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    z-index: 0;
+
+    &--gomel {
+        background-image: url(../img/region/background/gomel-background.png);
+    }
+    
+    &--brest {
+        background-image: url(../img/region/background/brest-background.png);
+    }
+    &--mogilev {
+        background-image: url(../img/region/background/mogilev-background.png);
+    }
+    
+    &--vitebsk {
+        background-image: url(../img/region/background/vitebsk-background.png);
+    }
+    
+    &--grodno {
+        background-image: url(../img/region/background/grodno-background.png);
+    }
+    
+    &--minsk {
+        background-image: url(../img/region/background/minsk-background.png);
+    }
+
+    &__warp {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-bottom: 4em;
+    }
+
+    &__map-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__map-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        padding: 0;
+        margin-left: 3em;
+    }    
+}
+
+.brest-region__map-region {
+    stroke: white;
+    stroke-width: 3px;
+    fill: rgb(252, 225, 135);
+    stroke-miterlimit: 10;
+
+    &:hover {
+        transition: .3s;
+        fill: rgb(255, 220, 105);
+    }
+}
+
+.region-map__tooltip {
+    display: none;
+    position: absolute;
+    padding: 0.6em;
+    width: 18em;
+    min-height: 10em;
+    background-color: rgba(230, 230, 230, 0.7);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+
+    & img {
+        display: block;
+        margin: 0 auto;
+        height: 7em;
+    }
+
+    & ul {
+        padding: 0;
+        margin: 0;
+        margin-left: 1em;
+    }
+    
+    & p,
+    & li {
+        text-indent: 1.5em;
+        font-size: 0.7em;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.close-region {
+    margin: 1em 0 0 auto;
+
+    &__svg {
+        width: 4em;
+        height: 4em;
+        fill: rgba(50, 55, 159, 0.9);
+        border: 0.2em solid rgba(50, 55, 159, 0.9);
+        border-radius: 50%;
+
+        &:hover {
+            transition: 0.3s;
+            stroke-width: 0.2em;
+            fill: rgba(255, 255, 255, 0.9);
+            stroke: rgba(50, 55, 159, 0.8);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+
+            & > polyline {
+                 stroke: rgba(50, 55, 159, 0.8);
+            }
+        }
+
+        & polyline {
+            stroke: rgba(255, 255, 255, 0.9);
+            stroke-width: 0.2em;
+        }
+    }
+}

@@ -1,59 +1,59 @@
 @charset "UTF-8";
 
 @use './sections/header.scss' as *;
+@use './sections/regions.scss' as *;
 
-
-.container{
-  width:100%;
-  padding-right:15px;
-  padding-left:15px;
-  margin-right:auto;
-  margin-left:auto
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
 }
 
-@media (min-width:576px){
-  .container{
-    max-width:540px
-  }
-}
-  
-@media (min-width:768px){
-  .container{
-    max-width:720px
+@media (min-width:576px) {
+  .container {
+    max-width: 540px
   }
 }
 
-@media (min-width:992px){
-  .container{
-    max-width:960px
+@media (min-width:768px) {
+  .container {
+    max-width: 720px
   }
 }
 
-@media (min-width:1200px){
-  .container{
-    max-width:1140px
+@media (min-width:992px) {
+  .container {
+    max-width: 960px
   }
 }
 
-@font-face{
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px
+  }
+}
+
+@font-face {
   font-family: 'Tahoma Regular';
   src: url('/fonts/Tahoma.eot') format('eot'),
-  url('/fonts/Tahoma.woff') format('woff'),
-  url('/fonts/Tahoma.ttf') format('truetype');
+    url('/fonts/Tahoma.woff') format('woff'),
+    url('/fonts/Tahoma.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: 'Tahoma Regular';
   src: url('/fonts/Tahoma-Bold.eot') format('eot'),
-  url('/fonts/Tahoma-Bold.woff') format('woff'),
-  url('/fonts/Tahoma-Bold.ttf') format('truetype');
+    url('/fonts/Tahoma-Bold.woff') format('woff'),
+    url('/fonts/Tahoma-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: 'Tahoma Italic';
   src: url('/fonts/Tahoma-Italic.ttf') format('truetype');
   font-weight: normal;
@@ -130,8 +130,10 @@
 
 
 ::-webkit-scrollbar {
-  width: 16px; /* ширина для вертикального скролла */
-  height: 8px; /* высота для горизонтального скролла */
+  width: 16px;
+  /* ширина для вертикального скролла */
+  height: 8px;
+  /* высота для горизонтального скролла */
   background-color: white;
 }
 
@@ -192,6 +194,14 @@ p {
   text-align: justify;
   text-indent: 3em;
   margin-bottom: 0.8em;
+}
+
+.big-text {
+  font-size: 1.2rem;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 
 /* - БЕЛАРУСЬ */
@@ -257,7 +267,7 @@ p {
   margin-bottom: 2em;
 }
 
-.Belarus-info__button span{
+.Belarus-info__button span {
   margin: 0;
   padding: 0;
   padding-bottom: 0.2em;
@@ -363,7 +373,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 6em; 
+  margin-top: 6em;
 }
 
 .main-map {
@@ -379,90 +389,92 @@ p {
   margin-bottom: 2em;
 }
 
-.main-map__region {
-  stroke: #ffffff;
-}
+.main-map {
 
-.main-map__region:hover {
-  transition: .5s;
-}
+  &__region {
+    stroke: #ffffff;
 
-.main-map__Brest {
-  fill: rgb(219, 226, 131);
-}
+    &:hover {
+      transition: .5s;
+    }
 
-.main-map__Gomel {
-  fill: rgb(255, 247, 177);
-}
-
-.main-map__Mogilev {
-  fill: rgb(251, 217, 202);
-}
-
-.main-map__Vitebsk {
-  fill: rgb(210, 205, 231); 
-}
-
-.main-map__Grodno {
-  fill: rgb(253, 213, 165);
-}
-
-.main-map__Minsk {
-  fill: rgb(245, 180, 210);
-}
-
-.main-map__Brest:hover {
-  fill: rgb(213, 223, 82);
-}
-
-.main-map__Gomel:hover {
-  fill: rgb(245, 231, 108);
-}
-
-.main-map__Mogilev:hover {
-  fill: rgb(241, 181, 155);
-}
-
-.main-map__Vitebsk:hover {
-  fill: rgb(170, 161, 211); 
-}
-
-.main-map__Grodno:hover {
-  fill: rgb(231, 176, 108);
-}
-
-.main-map__Minsk:hover {
-  fill: rgb(233, 147, 187);
-}
-
-.main-map__city:hover {
-  transition: .5s;
-  r: 1.2em;
-}
-
-.main-map__City-of-Minsk:hover {
-  transition: .5s;
-  r: 1.5em;
-}
-
-.main-map__city_Baranovichi:hover {
-  r: 1em;
+    &--brest {
+      fill: rgb(219, 226, 131);
+  
+      &:hover {
+        fill: rgb(213, 223, 82);
+      }
+    }
+  
+    &--gomel {
+      fill: rgb(255, 247, 177);
+  
+      &:hover {
+        fill: rgb(245, 231, 108);
+      }
+    }
+  
+    &--mogilev {
+      fill: rgb(251, 217, 202);
+  
+      &:hover {
+        fill: rgb(241, 181, 155);
+      }
+    }
+  
+    &--vitebsk {
+      fill: rgb(210, 205, 231);
+  
+      &:hover {
+        fill: rgb(170, 161, 211); 
+      }
+    }
+  
+    &--grodno {
+      fill: rgb(253, 213, 165);
+  
+      &:hover {
+        fill: rgb(231, 176, 108);
+      }
+    }
+  
+    &--minsk {
+      fill: rgb(247, 229, 180);
+  
+      &:hover {
+        fill: rgb(232, 207, 138);
+      }
+    }
+  }
 }
 
 .main-map__city {
   fill: red;
+
+  &:hover {
+    transition: .5s;
+    r: 1.2em;
+  } 
+
+  &--baranovichi:hover {
+    r: 1em;
+  }
+
+  &--minsk:hover {
+    r: 1.5em;
+  }
 }
 
 .main-map__city-name {
   font-weight: bold;
   stroke: none;
   color: #181818;
-  font-size: 1,2em;
+  font-size: 1, 2em;
 }
 
 .main-map__tooltip {
   display: none;
-  padding: 0.8em; 
+  padding: 0.8em;
   width: 22em;
   min-height: 10em;
   position: absolute;
@@ -483,7 +495,7 @@ p {
   margin-bottom: 0;
 }
 
-.main-map__tooltip p, 
+.main-map__tooltip p,
 .main-map__tooltip li {
   font-size: 0.8em;
   padding: 0;
@@ -494,161 +506,13 @@ p {
   stroke: #ffffff;
 }
 
-/* ОБЛАСТИ */
-
-.region-of-Belarus {
-  display: none;
-  transition: 1s;
-  width: 100%;
-  min-height: 1080px;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:50% 50%;
-  background-size: cover;
-  color: white;
-  z-index: 0;
-}
-
-.region-of-Belarus_warp {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  padding-bottom: 4em;
-}  
-
-.region__img {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.region__map_img {
-  display: block;
-  margin: 0 auto;
-}
-
-.region-of-Belarus ul {
-  padding: 0;
-  margin-left: 3em;
-}
-
-.close-region {
-  margin: 1em 0 0 auto;
-}
-
-.close-region_svg {
-  width: 4em;
-  height: 4em;
-  fill: rgba(50, 55, 159, 0.9);
-  border: 0.2em solid rgba(50, 55, 159, 0.9);
-  border-radius: 50%;
-}
-
-.close-region_svg polyline {
-  stroke: rgba(255, 255, 255, 0.9);
-  stroke-width: 0.2em;
-}
-
-.close-region_svg:hover {
-  transition: 0.3s;
-  stroke-width: 0.2em;
-  fill: rgba(255, 255, 255, 0.9);
-  stroke:rgba(50, 55, 159, 0.8); 
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
-}
-
-.close-region_svg:hover > polyline {
-  stroke:rgba(50, 55, 159, 0.8); 
-}
-
-/* БРЕСТСКАЯ ОБЛАСТЬ */
-
-.Brest-region {
-  background-image:url(../img/region/background/brest-background.png);
-}
-
-.region__map__city_Brest:hover {
-  r: 1.8em;
-}
-
-.region__map_city-name {
-  font-size: 1.7em;
-}
-
-.region__map__city-name_Baranivi {
-  font-weight: normal;
-  font-size: 1.2em;
-}
-
-.brest-region__map_region {
-  stroke:white;
-  stroke-width: 3px;
-  fill: rgb(252, 225, 135);
-  stroke-miterlimit: 10;
-}
-
-.brest-region__map_region:hover {
-  transition: .3s;
-  fill: rgb(255, 220, 105);
-}
-
-.region-map__tooltip {
-  display: none;
-  position: absolute;
-  padding: 0.6em; 
-  width: 18em;
-  min-height: 10em;
-  background-color: rgba(230, 230, 230, 0.7);
-  color: rgb(0, 0, 0);
-  z-index: 2;
-}
-
-.region-map__tooltip img {
-  display: block;
-  margin: 0 auto;
-  height: 7em;
-}
-
-.region-map__tooltip ul {
-  padding: 0;
-  margin: 0;
-  margin-left: 1em;
-}
-
-.region-map__tooltip p, 
-.region-map__tooltip li {
-  text-indent: 1.5em;
-  font-size: 0.7em;
-  padding: 0;
-  margin: 0;
-}
-
-.Gomel-region {
-  background-image: url(../img/region/background/gomel-background.png);
-}
-
-.Mogilev-region {
-  background-image: url(../img/region/background/mogilev-background.png);
-}
-
-.Vitebsk-region {
-  background-image: url(../img/region/background/vitebsk-background.png);
-}
-
-.Grodno-region {
-  background-image: url(../img/region/background/grodno-background.png);
-}
-
-.Minsk-region {
-  background-image: url(../img/region/background/minsk-background.png);
-}
-
 /* - БАРАНОВИЧИ */
 
 .Baranovichi {
-  background-image:url(../img/Baranovichi.png);
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:50% 50%;
+  background-image: url(../img/Baranovichi.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
   background-size: cover;
   color: white;
   transition: 1.8s;
@@ -661,7 +525,7 @@ p {
   min-height: 1080px;
   text-align: justify;
   padding-bottom: 16em;
-}  
+}
 
 .Baranovichi__history {
   margin-bottom: 2em;
@@ -713,11 +577,11 @@ p {
 /* - БЭЮК */
 
 .BEaLC {
-  background-image:url(../img/belc.png);
-  background-repeat:no-repeat;
+  background-image: url(../img/belc.png);
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position:50% 50%;
+  background-position: 50% 50%;
   color: white;
   border-bottom: 8px solid rgb(50, 55, 159);
 }
@@ -725,7 +589,7 @@ p {
 .BEaLC_warp {
   min-height: 1080px;
   padding-bottom: 16em;
-} 
+}
 
 .BEaLC__info {
   display: flex;
@@ -794,7 +658,7 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.BEaLC__history_big-image p{
+.BEaLC__history_big-image p {
   font-size: 1.2em;
   text-align: center;
 }
@@ -818,6 +682,7 @@ p {
 .panaram__wrap {
   position: relative;
 }
+
 /*
 .panaram__bnt {
   display: inline-block;
@@ -869,8 +734,9 @@ p {
   background-color: rgb(50, 55, 159);
 }
 
-.panaram__nav_item:hover  {
-  color: rgb(50, 55, 159);;
+.panaram__nav_item:hover {
+  color: rgb(50, 55, 159);
+  ;
   background-color: white;
 }
 
@@ -882,11 +748,11 @@ p {
   bottom: 2em;
 }
 
-.panaram__nav_item-1:hover > .panaram__item_nav-1 {
+.panaram__nav_item-1:hover>.panaram__item_nav-1 {
   display: block;
 }
 
-.panaram__nav_item-2:hover > .panaram__item_nav-2 {
+.panaram__nav_item-2:hover>.panaram__item_nav-2 {
   display: block;
 }
 
@@ -899,12 +765,13 @@ p {
   background-color: rgb(50, 55, 159);
 }
 
-.item__nav_item:hover  {
+.item__nav_item:hover {
   background-color: white;
 }
 
 .item__nav_item:hover a {
-  color: rgb(50, 55, 159);;
+  color: rgb(50, 55, 159);
+  ;
 }
 
 .item__nav_item a {
@@ -945,7 +812,7 @@ p {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.panaram_image { 
+.panaram_image {
   max-width: none;
 }
 
@@ -1078,7 +945,7 @@ p {
     right: 50px;
   }
 
-  .header-nav__item > a {
+  .header-nav__item>a {
     display: block;
     width: 100%;
     padding: 0.4em 1em;
