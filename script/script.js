@@ -1,26 +1,27 @@
-
-var prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos)
-    document.getElementById("header").style.top = "0";
-  else 
-    document.getElementById("header").style.top = "-64px";
-  prevScrollpos = currentScrollPos;
-}
-
-$(function(){
-        $('a[href^="#"]').click(function(){
-            let currentScrollPos = window.pageYOffset;
-
-            let target = $(this).attr('href');
-            let font_size = $('#text-size').css('font-size').substring(0, $('#text-size').css('font-size').length - 2);
-            let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-            let scroll_lenthe = $(target).offset().top - (+font_size / 1.5) * 4 + 58;
-           
-                $('html, body').animate({scrollTop: scroll_lenthe}, Math.abs(posTop - scroll_lenthe) / 4);
-            return false;
-    });
-});
+$(document).ready(() => {
+  let lastScrollTop = 0;
     
+  $(window).scroll(function() {
+    let currentScrollTop = $(this).scrollTop();
+
+    $('.header').css('height', currentScrollTop > lastScrollTop ? '0px' : '64px');
+      
+    lastScrollTop = currentScrollTop;
+  });
+
+  $('.scroll').click(function () {
+    const scrollTargetTop = $($(this).attr('href')).offset().top;
+    
+    $('html').animate({
+      scrollTop: scrollTargetTop
+    }, Math.abs(window.pageYOffset - scrollTargetTop) / 4);
+  });
+
+  $('.scroll-region').click(function () {
+    const scrollTargetTop = $($(this).attr('href')).offset().top;
+
+    $('.regions').animate({
+      height: '0px'
+    }, Math.abs(window.pageYOffset - scrollTargetTop) / 4);
+  });
+});

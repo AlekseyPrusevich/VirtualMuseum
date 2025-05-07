@@ -91,7 +91,7 @@
         </ul>
 
         <div class="close-region">
-          <a class="close-region__link" href="#belarus__map">
+          <a class="close-region__link scroll scroll-region" href="#belarus-map">
             <svg class="close-region__svg">
               <circle cx="50%" cy="50%" r="28"/>
               <polyline points="16,36 30,22 44,36" style="fill:none"/>

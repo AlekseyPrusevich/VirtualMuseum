@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @use './sections/header.scss' as *;
+@use './sections/college.scss' as *;
 @use './sections/regions.scss' as *;
 
 .container {
@@ -169,39 +170,43 @@ img {
 
 h2 {
   font-weight: bold;
-  font-size: 4em;
-  padding-top: 3em;
-  padding-bottom: 1em;
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
   font-weight: bold;
-  font-size: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
   font-weight: bold;
-  font-size: 1.4em;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  font-size: 1.4rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 p {
   margin: 0;
   padding: 0;
   text-align: justify;
-  text-indent: 3em;
-  margin-bottom: 0.8em;
+  text-indent: 3rem;
+  margin-bottom: 0.8rem;
 }
 
 .big-text {
-  font-size: 1.2rem;
+  font-size: 1.2rrem;
 }
 
 .font-bold {
   font-weight: bold;
+}
+
+.main {
+  margin-top: -64px;
 }
 
 /* - БЕЛАРУСЬ */
@@ -215,7 +220,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 16em;
+  padding-bottom: 16rem;
 }
 
 .Belarus__backgroind-video {
@@ -233,24 +238,24 @@ p {
 
 .Belarus_warp p {
   text-indent: 0;
-  margin: 0em;
+  margin: 0rem;
 }
 
 .Belarus-info {
-  margin-top: 2em;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
 
 .Belarus-info__panel {
-  margin-top: 2em;
-  margin-left: 1em;
+  margin-top: 2rem;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .Belarus-info__list {
-  margin: 0 0 2em 1.4em;
+  margin: 0 0 2em 1.4rem;
   padding: 0;
 }
 
@@ -258,19 +263,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 12em;
-  height: 3em;
+  width: 12rem;
+  height: 3rem;
   border: 0.07em solid white;
-  border-radius: 0.2em;
+  border-radius: 0.2rem;
   color: white;
-  font-size: 1.6em;
-  margin-bottom: 2em;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .Belarus-info__button span {
   margin: 0;
   padding: 0;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.2rem;
 }
 
 .Belarus-info__button:hover {
@@ -283,9 +288,9 @@ p {
 /* СЛАЙДЕР*/
 
 .Belarus-info__slider {
-  max-width: 40em;
-  margin-left: 2em;
-  margin-right: 1em;
+  max-width: 40rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,7 +378,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 6em;
+  margin-top: 6rem;
 }
 
 .main-map {
@@ -386,7 +391,7 @@ p {
 .map__warp {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .main-map {
@@ -453,15 +458,15 @@ p {
 
   &:hover {
     transition: .5s;
-    r: 1.2em;
+    r: 1.2rem;
   } 
 
   &--baranovichi:hover {
-    r: 1em;
+    r: 1rem;
   }
 
   &--minsk:hover {
-    r: 1.5em;
+    r: 1.5rem;
   }
 }
 
@@ -469,14 +474,14 @@ p {
   font-weight: bold;
   stroke: none;
   color: #181818;
-  font-size: 1, 2em;
+  font-size: 1, 2rem;
 }
 
 .main-map__tooltip {
   display: none;
-  padding: 0.8em;
-  width: 22em;
-  min-height: 10em;
+  padding: 0.8rem;
+  width: 22rem;
+  min-height: 10rem;
   position: absolute;
   background-color: rgba(230, 230, 230, 0.7);
   color: rgb(0, 0, 0);
@@ -486,18 +491,18 @@ p {
 .main-map__tooltip img {
   display: block;
   margin: 0 auto;
-  height: 9em;
+  height: 9rem;
 }
 
 .main-map__tooltip ul {
   padding: 0;
-  padding-left: 1.4em;
+  padding-left: 1.4rem;
   margin-bottom: 0;
 }
 
 .main-map__tooltip p,
 .main-map__tooltip li {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding: 0;
   margin: 0;
 }
@@ -524,30 +529,30 @@ p {
   flex-direction: column;
   min-height: 1080px;
   text-align: justify;
-  padding-bottom: 16em;
+  padding-bottom: 16rem;
 }
 
 .Baranovichi__history {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .Baranovichi__history_main-info {
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }
 
 .Baranovichi__main-info_logo img {
-  width: 26em;
+  width: 26rem;
 }
 
 .Baranovichi__main-info {
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .Baranovichi__history_fragment {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.6rem;
 }
 
 .Baranovichi__history_slider {
@@ -571,106 +576,13 @@ p {
 .Baranovichi__video {
   margin: 0 auto;
   width: 90%;
-  height: 33.75em;
-}
-
-/* - БЭЮК */
-
-.BEaLC {
-  background-image: url(../img/belc.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  color: white;
-  border-bottom: 8px solid rgb(50, 55, 159);
-}
-
-.BEaLC_warp {
-  min-height: 1080px;
-  padding-bottom: 16em;
-}
-
-.BEaLC__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.BEaLC__epigraph {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: left;
-  margin-bottom: 4em;
-}
-
-.BEaLC__epigraph_text {
-  width: 60%;
-  margin: auto 0;
-  font-size: 1.4em;
-  font-style: italic;
-  line-height: 1.4;
-  text-indent: 0;
-}
-
-.BEaLC__epigraph_image {
-  width: 26%;
-}
-
-.BEaLC__history {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 8em;
-}
-
-.BEaLC__history_text {
-  margin-left: 1.4em;
-}
-
-.BEaLC__history_list {
-  text-align: justify;
-  margin: 0;
-  padding: 0;
-}
-
-.BEaLC__history_image {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  width: 70em;
-}
-
-.BEaLC__history_img {
-  height: 10.26em;
-  width: 7.33em;
-  margin: 0.2em 0 0.2em 0.4em;
-}
-
-.BEaLC__history_big-image {
-  display: none;
-  position: absolute;
-  min-height: 50em;
-  width: 35.4em;
-  padding: 0.7em;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.BEaLC__history_big-image p {
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.BEaLC__history_big-img {
-  margin: 0 auto;
+  height: 33.75rem;
 }
 
 /* Панорама */
 
 .college__tour {
-  margin-bottom: 60em;
+  margin-bottom: 60rem;
 }
 
 .panaram__container {
@@ -687,13 +599,13 @@ p {
 .panaram__bnt {
   display: inline-block;
   position: absolute;
-  width: 30em;
-  height: 2em;
+  width: 30rem;
+  height: 2rem;
   background-color: rgba(0, 0, 0, .5);
   text-align: center;
   color: white;
-  font-size: 1.2em;
-  padding-top: 0.2em;
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
   z-index: 1;
 }
 
@@ -725,12 +637,12 @@ p {
 .panaram__nav_item {
   display: inline-block;
   position: relative;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   text-align: center;
-  padding-top: 0.2em;
-  margin: 0.6em;
-  width: 10em;
-  height: 2em;
+  padding-top: 0.2rem;
+  margin: 0.6rem;
+  width: 10rem;
+  height: 2rem;
   background-color: rgb(50, 55, 159);
 }
 
@@ -745,7 +657,7 @@ p {
   display: none;
   padding: 0;
   margin: 0;
-  bottom: 2em;
+  bottom: 2rem;
 }
 
 .panaram__nav_item-1:hover>.panaram__item_nav-1 {
@@ -760,8 +672,8 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 10em;
-  height: 1.4em;
+  width: 10rem;
+  height: 1.4rem;
   background-color: rgb(50, 55, 159);
 }
 
@@ -775,12 +687,14 @@ p {
 }
 
 .item__nav_item a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   text-decoration: none;
   color: #fff;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   vertical-align: middle;
 }
 
@@ -788,8 +702,8 @@ p {
   position: relative;
   left: 0;
   width: 100%;
-  height: 52em;
-  min-width: 40em;
+  height: 52rem;
+  min-width: 40rem;
   overflow: auto;
 }
 
@@ -830,14 +744,14 @@ p {
 
 .footer {
   width: 100%;
-  height: 4em;
+  height: 4rem;
   background-color: rgb(50, 55, 159);
 }
 
 .footer__warp {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.7em;
+  padding-top: 0.7rem;
 }
 
 .footer__copyright {
@@ -858,11 +772,11 @@ p {
 }
 
 .social-list__item {
-  margin: 0 0.2em 0 0.2em;
+  margin: 0 0.2em 0 0.2rem;
 }
 
 .social-list__item_telegram {
-  margin: 0 0.15em 0 0.15em;
+  margin: 0 0.15em 0 0.15rem;
 }
 
 .social-vk {
@@ -888,14 +802,14 @@ p {
 
 .social {
   display: block;
-  width: 2.6em;
-  height: 2.6em;
+  width: 2.6rem;
+  height: 2.6rem;
   background-size: contain;
   transition: all 0.15s ease;
 }
 
 .social-yt {
-  width: 3.6em;
+  width: 3.6rem;
   background: url("../img/ico/social-yt.png") no-repeat;
   background-size: contain;
 }
@@ -918,12 +832,12 @@ p {
   }
 
   .main-map__tooltip {
-    width: 20.5em;
+    width: 20.5rem;
   }
 
   .BEaLC__history_img {
-    height: 8.4em;
-    width: 6em;
+    height: 8.4rem;
+    width: 6rem;
   }
 }
 
@@ -948,12 +862,12 @@ p {
   .header-nav__item>a {
     display: block;
     width: 100%;
-    padding: 0.4em 1em;
+    padding: 0.4em 1rem;
   }
 
   .virtual-museums__list {
-    top: 0em;
-    left: -22em;
+    top: 0rem;
+    left: -22rem;
   }
 
   .mobile-menu__btn {
@@ -976,16 +890,16 @@ p {
   }
 
   .main-map__tooltip {
-    width: 19em;
-    min-height: 8em;
+    width: 19rem;
+    min-height: 8rem;
   }
 
   .Baranovichi__main-info_list {
-    padding-left: 1.4em;
+    padding-left: 1.4rem;
   }
 
   .Belarus-info__slider {
-    max-width: 60em;
+    max-width: 60rem;
     margin-left: 0;
     margin-right: 0;
     display: flex;
@@ -993,8 +907,8 @@ p {
   }
 
   .BEaLC__history_big-image {
-    min-height: 40em;
-    width: 28.32em;
+    min-height: 40rem;
+    width: 28.32rem;
   }
 }
 
@@ -1011,12 +925,12 @@ p {
   }
 
   .main-map__tooltip {
-    width: 16em;
-    min-height: 8em;
+    width: 16rem;
+    min-height: 8rem;
   }
 
   .Baranovichi__main-info {
-    margin-left: 0em;
+    margin-left: 0rem;
     width: 100%;
   }
 
@@ -1033,8 +947,8 @@ p {
   }
 
   .BEaLC__history_img {
-    height: 7.47em;
-    width: 5.35em;
+    height: 7.47rem;
+    width: 5.35rem;
   }
 }
 
@@ -1050,22 +964,22 @@ p {
   }
 
   .BEaLC__history_big-image {
-    min-height: 30em;
-    width: 21.24em;
+    min-height: 30rem;
+    width: 21.24rem;
   }
 
   .footer__copyright {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     padding-top: 0;
-    max-width: 20em;
+    max-width: 20rem;
   }
 
   .social {
-    width: 2.1em;
-    height: 2.1em;
+    width: 2.1rem;
+    height: 2.1rem;
   }
 
   .social-yt {
-    width: 3em;
+    width: 3rem;
   }
 }

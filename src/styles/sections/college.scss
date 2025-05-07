@@ -1,0 +1,86 @@
+.college {
+    background-image: url(../img/belc.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;
+    border-bottom: 8px solid rgb(50, 55, 159);
+
+    &__warp {
+        min-height: 1080px;
+        padding-bottom: 16rem;
+    }    
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.college-epigraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 4rem;
+
+    &__text {
+        width: 60%;
+        margin: auto 0;
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 1.4;
+        text-indent: 0;
+    }
+
+    &__image {
+        width: 26%;
+    }
+}
+
+.college-history {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 8rem;
+
+    &__list {
+        text-align: justify;
+        margin: 0 0 0 1.4rem;
+        padding: 0;
+    }
+
+    &__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        max-width: 380px;
+    }
+
+    &__img {
+        max-width: 7.5rem;
+    }
+
+    &__preview {
+        display: none;
+        position: absolute;
+        width: 64%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        & p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        & img { 
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 70vh;
+        }
+    }
+}

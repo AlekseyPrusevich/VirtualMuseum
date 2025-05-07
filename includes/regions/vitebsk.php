@@ -79,7 +79,7 @@
         <p>Александр Пушкин,  Иван Лажечников, Иван Бунин,  Владимир Маяковский, Глеб Успенский также имеют исторические связи с Витебской областью.</p>
 
         <div class="close-region">
-          <a class="close-region__link" href="#belarus__map">
+          <a class="close-region__link scroll scroll-region" href="#belarus-map">
             <svg class="close-region__svg">
               <circle cx="50%" cy="50%" r="28"/>
               <polyline points="16,36 30,22 44,36" style="fill:none"/>
