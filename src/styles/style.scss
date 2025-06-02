@@ -3,6 +3,7 @@
 @use './sections/header.scss' as *;
 @use './sections/college.scss' as *;
 @use './sections/regions.scss' as *;
+@use './sections/panorama.scss' as *;
 
 .container {
   width: 100%;
@@ -579,22 +580,6 @@ p {
   height: 33.75rem;
 }
 
-/* Панорама */
-
-.college__tour {
-  margin-bottom: 60rem;
-}
-
-.panaram__container {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.panaram__wrap {
-  position: relative;
-}
-
 /*
 .panaram__bnt {
   display: inline-block;
@@ -623,112 +608,6 @@ p {
   right: 0;
 }
 */
-
-.panaram__nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  z-index: 1;
-}
-
-.panaram__nav_item {
-  display: inline-block;
-  position: relative;
-  font-size: 1.6rem;
-  text-align: center;
-  padding-top: 0.2rem;
-  margin: 0.6rem;
-  width: 10rem;
-  height: 2rem;
-  background-color: rgb(50, 55, 159);
-}
-
-.panaram__nav_item:hover {
-  color: rgb(50, 55, 159);
-  ;
-  background-color: white;
-}
-
-.panaram__item_nav {
-  position: absolute;
-  display: none;
-  padding: 0;
-  margin: 0;
-  bottom: 2rem;
-}
-
-.panaram__nav_item-1:hover>.panaram__item_nav-1 {
-  display: block;
-}
-
-.panaram__nav_item-2:hover>.panaram__item_nav-2 {
-  display: block;
-}
-
-.item__nav_item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 10rem;
-  height: 1.4rem;
-  background-color: rgb(50, 55, 159);
-}
-
-.item__nav_item:hover {
-  background-color: white;
-}
-
-.item__nav_item:hover a {
-  color: rgb(50, 55, 159);
-  ;
-}
-
-.item__nav_item a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.7rem;
-  vertical-align: middle;
-}
-
-.panaram {
-  position: relative;
-  left: 0;
-  width: 100%;
-  height: 52rem;
-  min-width: 40rem;
-  overflow: auto;
-}
-
-.panaram__label {
-  display: none;
-  position: absolute;
-  width: 90px;
-  margin: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.panaram__label-1 {
-  display: block;
-  left: 2595px;
-  top: 260px;
-}
-
-.panaram__label:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.panaram_image {
-  max-width: none;
-}
 
 /* Карта */
 

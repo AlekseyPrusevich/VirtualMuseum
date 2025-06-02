@@ -246,79 +246,14 @@
           </div>
         </div>
 
-        <div class="college__tour">
-          <h3 class="panaram_title">Виртуальная экскурсия по колледжу</h3>
+        <?php include './includes/panorama.php'; ?>  
 
-          
-          <div class="panaram__container">
-            <div class="panaram__wrap">
-              <div class="panaram__buttons">
-  <!--
-                <a href="#" class="panaram__bnt panaram-back_bnt">Назад</a>
-                <a href="#" class="panaram__bnt panaram-next_bnt">Вперед</a>
-  -->
-                <ul class="panaram__nav">
-                  <li class="panaram__nav_item panaram__nav_item-1">Первый этаж
-                    <ul class="panaram__item_nav panaram__item_nav-1">
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/entrance.jpg')">Главный вход</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/foyer.jpg')">Фойе колледжа</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/zaoDep.jpg')">Заоченное отделение</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/dayDep.jpg')">Дневное отделение</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/101.jpg')">Кабинет 101</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/113.jpg')">Кабинет 113</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/114.jpg')">Кабинет 114</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/firstСorridor.jpg')">Коридор первого этажа</a></li>
-                    </ul>
-                  </li>
-                  <li class="panaram__nav_item panaram__nav_item-2">Второй этаж
-                    <ul class="panaram__item_nav panaram__item_nav-2">
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/secondСorridor.jpg')">Коридор второго этажа</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/methodical.jpg')">Методический кабинет</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/library.jpg')">Библиотека</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/202.jpg')">Кабинет 202</a></li>
-                      <li class="item__nav_item"><a href="javascript:l_image('img/panaram/212.jpg')">Кабинет 212</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="panaram">
-                <div class="labels__container">
-                  <a href="javascript:l_image('img/panaram/foyer.jpg')" class="panaram__label panaram__label-1" id="panaram__label-1" title="Фойе колледжа">
-                    <img src="ico/transition.png" alt="">
-                  </a>
-                </div>
-                <a class="panaram__label" id="panaram__label-2">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-3">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-4">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-5">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-5">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-6">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <a class="panaram__label" id="panaram__label-7">
-                  <img src="ico/transition.png" alt="">
-                </a>
-                <img class="panaram_image" id="panaram_image" src="img/panaram/entrance.jpg" alt="Панарама колледжа" name="panarama_img">
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <div class="BEaLC__map fadeInUp wow">
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac41c4f8a8d41c36de839bab6e023819ea7da8a4333592f1178c8cb5782572c5c&amp;width=1100&amp;height=520&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </div>
-
     </section>
     
     <section class="Baranovichi" id="baranovichi-link">
