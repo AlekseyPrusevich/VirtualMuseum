@@ -1160,10 +1160,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="script/script.js"></script>
-  <script type="text/javascript" src="script/slider.js"></script>
-  <script type="text/javascript" src="script/tooltop.js"></script>
-  <script type="text/javascript" src="script/panarama.js"></script>
+  <script type="text/javascript" src="dist/script.min.js"></script>
   <script type="text/javascript" src="dist/wow.min.js"></script>
   <script>new WOW().init();</script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>

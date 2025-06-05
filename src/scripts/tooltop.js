@@ -24,11 +24,3 @@ $(document).ready(() => {
     $('#tip-' + $(this).data('tooltip')).hide();
   });
 });
-
-
-
-
-
-
-
-  
